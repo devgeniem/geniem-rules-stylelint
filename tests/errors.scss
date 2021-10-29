@@ -1,0 +1,245 @@
+$color-black: black;
+$color-white: white;
+$primary: $color-black;
+$primary-light: grey;
+
+h1#title {
+    display: none;
+    z-index: inherit;
+  width: 100vh;
+  height: 100vh;
+    outline: none;
+    opacity: 4;
+}
+
+.x {
+    &__y {
+        &__z {
+            width: 100% !important;
+
+            &__a {
+                border: 1px solid black;
+            }
+        }
+        &--modifier {
+            width: 50%;
+            outline: none;
+        }
+    }
+
+    &-notbem {
+        outline: auto;
+    }
+}
+
+button {
+    &:focus {
+        border: transparent;
+        outline: none;
+    }
+}
+
+/*!*
+ * Copyright (c) 2021. Geniem Oy
+ */
+
+/*xyz*/
+
+.button {
+    &.is-primary,
+    &.is-secondary {
+        background: $primary !important;
+        border-color: $primary !important;
+        color: $color-white !important;
+
+        &.is-hovered,
+        &:hover {
+            background: $color-white !important;
+            border-color: $color-white !important;
+            color: $primary !important;
+        }
+
+        &.is-active,
+        &:active,
+        &.is-focused,
+        &:focus {
+            background: $color-white !important;
+            border-color: $color-white !important;
+            color: $color-black !important;
+
+            .icon {
+                fill: $color-black !important;
+            }
+        }
+
+        &.is-focused,
+        &:focus {
+            outline: 0.125rem dashed $primary;
+        }
+
+        &.is-borderless {
+            background: $color-black !important;
+
+            &.is-hovered,
+            &:hover,
+            &.is-focused,
+            &:focus,
+            &.is-active,
+            &:active {
+                background: $color-black !important;
+                border-color: transparent !important;
+                color: $color-white !important;
+
+                .icon {
+                    fill: $color-white !important;
+                }
+            }
+
+            &.is-hovered,
+            &:hover {
+                color: $primary-light !important;
+
+                .icon {
+                    fill: $primary-light !important;
+                }
+            }
+        }
+
+        &.is-outlined {
+            background: transparent !important;
+            color: $primary-light !important;
+
+            &.is-focused,
+            &:focus,
+            &.is-hovered,
+            &:hover {
+                background: transparent !important;
+                border-color: $color-white !important;
+                color: $color-white !important;
+
+                .icon {
+                    fill: $color-white !important;
+                }
+            }
+
+            &.is-focused,
+            &:focus {
+                outline: 0.125rem dashed $primary;
+            }
+        }
+
+        /**
+         * Inverted
+         */
+        &-invert,
+        &.is-inverted {
+            background: $color-black !important;
+            border-color: $color-white !important;
+            color: $color-white !important;
+
+            .icon {
+                fill: $color-white !important;
+            }
+
+            &.is-hovered,
+            &:hover {
+                background: $color-black !important;
+                border-color: $primary-light !important;
+                color: $primary-light !important;
+
+                .icon {
+                    fill: $primary-light !important;
+                }
+            }
+
+            &.is-active,
+            &:active,
+            &.is-focused,
+            &:focus {
+                background: $color-black !important;
+                border-color: $primary-light !important;
+                color: $color-white !important;
+
+                .icon {
+                    fill: $color-white !important;
+                }
+            }
+
+            &.is-focused,
+            &:focus {
+                outline: 0.125rem dashed $primary-light;
+
+                .icon {
+                    fill: $color-white !important;
+                }
+            }
+
+            &.is-borderless {
+                color: $color-white !important;
+                background: $color-black !important;
+
+                .icon {
+                    fill: $color-white !important;
+                }
+
+                &.is-hovered,
+                &:hover,
+                &.is-focused,
+                &:focus,
+                &.is-active,
+                &:active {
+                    background: $color-black !important;
+                    border-color: transparent !important;
+                    color: $color-white !important;
+
+                    .icon {
+                        fill: $color-white !important;
+                    }
+                }
+
+                &.is-hovered,
+                &:hover {
+                    color: $primary-light !important;
+
+                    .icon {
+                        fill: $primary-light !important;
+                    }
+                }
+            }
+
+            &.is-outlined {
+                background: transparent !important;
+                color: $color-white !important;
+                border-color: $color-white !important;
+
+                .icon {
+                    fill: $color-white !important;
+                }
+
+                &.is-active,
+                &:active,
+                &.is-focused,
+                &:focus,
+                &.is-hovered,
+                &:hover {
+                    background: transparent !important;
+                    border-color: $primary-light !important;
+                    color: $primary-light !important;
+
+                    .icon {
+                        fill: $primary-light !important;
+                    }
+                }
+
+                &.is-focused,
+                &:focus {
+                    outline: 0.125rem dashed $primary-light;
+
+                    .icon {
+                        fill: $primary-light !important;
+                    }
+                }
+            }
+        }
+    }
+}
