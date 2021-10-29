@@ -2,6 +2,7 @@
     "name": "@geniem/geniem-rules-stylelint",
     "version": "1.0.0",
     "description": "Geniem Oy stylelint rules package",
+    "private": false,
     "main": "index.js",
     "author": "Geniem Oy",
     "license": "MIT",
