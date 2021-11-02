@@ -12,26 +12,28 @@
     "homepage": "https://github.com/devgeniem/geniem-rules-stylelint#readme",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "find-new-rules": "stylelint-find-new-rules"
+        "find-new-rules": "stylelint-find-new-rules",
+        "release": "release-it",
+        "release-dry": "release-it --dry-run"
     },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/devgeniem/geniem-rules-stylelint.git"
     },
     "dependencies": {
-        "@wordpress/eslint-plugin": "^9.1.1",
+        "@wordpress/eslint-plugin": "^9.2.0",
         "eslint": "^7.32.0",
         "eslint-config-stylelint": "^13.1.1",
-        "jest": "^27.1.0",
-        "postcss": "^8.3.6",
+        "jest": "^27.3.1",
+        "postcss": "^8.3.11",
         "postcss-bem-linter": "^3.3.0",
         "postcss-sorting": "^6.0.0",
-        "prettier": "^2.3.2",
+        "prettier": "^2.4.1",
         "stylelint": "^13.13.1",
         "stylelint-a11y": "^1.2.3",
         "stylelint-config-property-sort-order-smacss": "^7.1.0",
-        "stylelint-no-unsupported-browser-features": "^5.0.1",
-        "stylelint-scss": "^3.20.1",
+        "stylelint-no-unsupported-browser-features": "^5.0.2",
+        "stylelint-scss": "^3.21.0",
         "stylelint-selector-bem-pattern": "^2.1.1"
     },
     "peerDependencies": {
@@ -41,12 +43,21 @@
         "stylelint": "^13.13.1"
     },
     "devDependencies": {
+        "release-it": "^14.11.6",
         "stylelint-find-new-rules": "^3.0.2"
     },
     "stylelint": {
         "extends": [
             "./index.js"
         ]
+    },
+    "release-it": {
+        "npm": {
+            "publish": true
+        },
+        "github": {
+            "release": true
+        }
     },
     "files": [
         "index.js",
