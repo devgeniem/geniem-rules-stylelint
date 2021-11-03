@@ -1,6 +1,6 @@
 {
     "name": "@geniem/geniem-rules-stylelint",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Geniem Oy stylelint rules package",
     "private": false,
     "main": "index.js",

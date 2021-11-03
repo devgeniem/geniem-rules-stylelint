@@ -7,6 +7,8 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [1.0.3] - 2021-11-03
+
 - Fixed changelog
 
 ## [1.0.2] - 2021-11-03
@@ -24,3 +26,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ## [1.0.0] - 2021-10-29
 
 - Initial release
+
+
+[Unreleased]: https://github.com/devgeniem/geniem-rules-stylelint/compare/1.0.3...HEAD
+[1.0.3]: https://github.com/devgeniem/geniem-rules-stylelint/compare/1.0.2...1.0.3
