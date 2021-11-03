@@ -43,6 +43,8 @@
         "stylelint": "^13.13.1"
     },
     "devDependencies": {
+        "@release-it/bumper": "^3.0.1",
+        "@release-it/keep-a-changelog": "^2.3.0",
         "release-it": "^14.11.6",
         "stylelint-find-new-rules": "^3.0.2"
     },
@@ -51,12 +53,32 @@
             "./index.js"
         ]
     },
+    "publishConfig": {
+        "access": "public"
+    },
     "release-it": {
+        "git": {
+            "commitMessage": "Release v${version}",
+            "requireBranch": "main"
+        },
+        "github": {
+            "release": true,
+            "web": true
+        },
         "npm": {
             "publish": true
         },
-        "github": {
-            "release": true
+        "plugins": {
+            "@release-it/bumper": {
+                "in": "package.json",
+                "out": "package.json"
+            },
+            "@release-it/keep-a-changelog": {
+                "filename": "CHANGELOG.md",
+                "addUnreleased": true,
+                "addVersionUrl": true,
+                "keepUnreleased": true
+            }
         }
     },
     "files": [

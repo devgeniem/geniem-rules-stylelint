@@ -13,13 +13,13 @@ module.exports = {
         'plugin/selector-bem-pattern': {
             preset: 'suit'
         },
-        'a11y/media-prefers-reduced-motion': true,
-        'a11y/selector-pseudo-class-focus': true,
+        'a11y/media-prefers-reduced-motion': null,
+        'a11y/selector-pseudo-class-focus': [ true, { severity: 'warning' } ],
         'a11y/content-property-no-static-value': [ true, { severity: 'warning' } ],
         'a11y/font-size-is-readable': [ true, { severity: 'warning' } ],
         'a11y/line-height-is-vertical-rhythmed': [ true, { severity: 'warning' } ],
         'a11y/no-display-none': [ true, { severity: 'warning' } ],
-        'a11y/no-outline-none': true,
+        'a11y/no-outline-none': [ true, { severity: 'warning' } ],
         'a11y/no-spread-text': [ true, { severity: 'warning' } ],
         'a11y/no-obsolete-attribute': [ true, { severity: 'warning' } ],
         'a11y/no-obsolete-element': [ true, { severity: 'warning' } ],
@@ -91,7 +91,7 @@ module.exports = {
         'length-zero-no-unit': true,
         'max-empty-lines': 1,
         'max-nesting-depth': [
-            4,
+            5,
             { ignore: [ "pseudo-classes" ] }
         ],
         'media-feature-colon-space-after': 'always',
