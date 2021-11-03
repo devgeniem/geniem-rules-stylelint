@@ -13,7 +13,7 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "find-new-rules": "stylelint-find-new-rules",
-        "release": "read -p 'GITHUB_TOKEN: ' GITHUB_TOKEN && export GITHUB_TOKEN=$GITHUB_TOKEN && release-it --allow-same-version",
+        "release": "read -p 'GITHUB_TOKEN: ' GITHUB_TOKEN && export GITHUB_TOKEN=$GITHUB_TOKEN && release-it",
         "release-dry": "release-it --dry-run"
     },
     "repository": {
@@ -43,7 +43,6 @@
         "stylelint": "^13.13.1"
     },
     "devDependencies": {
-        "@release-it/bumper": "^3.0.1",
         "@release-it/keep-a-changelog": "^2.3.0",
         "release-it": "^14.11.6",
         "stylelint-find-new-rules": "^3.0.2"
@@ -69,10 +68,6 @@
             "publish": true
         },
         "plugins": {
-            "@release-it/bumper": {
-                "in": "package.json",
-                "out": "package.json"
-            },
             "@release-it/keep-a-changelog": {
                 "filename": "CHANGELOG.md",
                 "addUnreleased": true,
