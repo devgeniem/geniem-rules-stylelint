@@ -7,6 +7,10 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+- Fixed changelog
+
+## [1.0.2] - 2021-11-03
+
 - Added more `release-it` configuration
 - Removed `a11y/media-prefers-reduced-motion` because it's buggy
 - Changed `a11y/selector-pseudo-class-focus` and `a11y/no-outline-none` level to `warning`
