@@ -1,7 +1,14 @@
 module.exports = {
     configBasedir: '.',
+    overrides: [
+        {
+            files: ["**/*.scss"],
+            customSyntax: 'postcss-scss'
+        }
+    ],
     plugins: [
         'stylelint-a11y',
+        'stylelint-scss',
         'stylelint-selector-bem-pattern',
     ],
     extends: [
@@ -43,6 +50,7 @@ module.exports = {
         'block-opening-brace-space-before': 'always',
         'color-hex-case': 'lower',
         'color-hex-length': 'short',
+        'color-no-invalid-hex': true,
         'comment-empty-line-before': [
             'always',
             {
