@@ -7,6 +7,8 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [1.0.4] - 2022-03-03
+
 - Added override config for stylelint-scss processing
 - Check for valid hex values in colors
 - Moved peer dependencies to real dependencies
@@ -32,5 +34,6 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Initial release
 
 
-[Unreleased]: https://github.com/devgeniem/geniem-rules-stylelint/compare/1.0.3...HEAD
+[Unreleased]: https://github.com/devgeniem/geniem-rules-stylelint/compare/1.0.4...HEAD
+[1.0.4]: https://github.com/devgeniem/geniem-rules-stylelint/compare/1.0.3...1.0.4
 [1.0.3]: https://github.com/devgeniem/geniem-rules-stylelint/compare/1.0.2...1.0.3
