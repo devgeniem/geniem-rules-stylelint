@@ -7,6 +7,10 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+- Added override config for stylelint-scss processing
+- Check for valid hex values in colors
+- Moved peer dependencies to real dependencies
+
 ## [1.0.3] - 2021-11-03
 
 - Fixed changelog
