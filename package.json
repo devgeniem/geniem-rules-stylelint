@@ -29,7 +29,7 @@
         "postcss": "^8.4.5",
         "postcss-bem-linter": "^3.3.0",
         "postcss-scss": "^4.0.2",
-        "postcss-sorting": "^6.0.0",
+        "postcss-sorting": "^8.0.2",
         "prettier": "^2.4.1",
         "stylelint": "^13.13.1",
         "stylelint-a11y": "^1.2.3",
